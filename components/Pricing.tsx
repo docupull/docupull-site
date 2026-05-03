@@ -1,116 +1,60 @@
-const plans = [
-  {
-    name: "Starter",
-    description: "For small teams processing a low volume of orders each month.",
-    price: null,
-    cta: "Book a Demo",
-    ctaHref: "#",
-    features: [
-      "Up to 50 orders / month",
-      "Document upload workflow",
-      "Automated report generation",
-      "Issue detection & flagging",
-      "Email support",
-    ],
-    highlight: false,
-  },
-  {
-    name: "Growth",
-    description: "Most teams choose this. Built for production-scale title operations.",
-    price: null,
-    cta: "Book a Demo",
-    ctaHref: "#",
-    features: [
-      "Up to 500 orders / month",
-      "Both workflow paths (upload + search)",
-      "Priority processing queue",
-      "Full-service title search",
-      "Dedicated onboarding",
-      "Priority support",
-    ],
-    highlight: true,
-  },
-  {
-    name: "Enterprise",
-    description: "Custom pricing for high-volume or multi-location title operations.",
-    price: null,
-    cta: "Contact Us",
-    ctaHref: "#",
-    features: [
-      "Unlimited orders",
-      "Custom integrations",
-      "SLA guarantees",
-      "Dedicated account manager",
-      "White-label options",
-      "Custom reporting",
-    ],
-    highlight: false,
-  },
-];
-
 export default function Pricing() {
   return (
-    <section className="py-24 px-6 bg-slate-50" id="pricing">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Pricing</p>
-          <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Simple, transparent plans
-          </h2>
-          <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
-            Book a demo to learn about pricing. No contracts required to start.
-          </p>
-        </div>
+    <section className="py-24 px-6 bg-white" id="pricing">
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Pricing</p>
+        <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-4">
+          Pricing that scales with your volume
+        </h2>
+        <p className="text-lg text-slate-500 max-w-xl mx-auto mb-12">
+          Simple per-order pricing — no subscriptions, no seat fees, no contracts.
+          Pay for what you process. Book a demo and we'll walk you through the numbers.
+        </p>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`rounded-2xl p-8 flex flex-col ${
-                plan.highlight
-                  ? "bg-blue-600 border-2 border-blue-600 text-white"
-                  : "bg-white border border-slate-200"
-              }`}
-            >
-              {plan.highlight && (
-                <div className="inline-flex items-center gap-1.5 bg-white/20 text-white text-xs font-semibold px-3 py-1.5 rounded-full self-start mb-5">
-                  Most popular
-                </div>
-              )}
-              <h3 className={`text-xl font-bold mb-2 ${plan.highlight ? "text-white" : "text-slate-900"}`}>
-                {plan.name}
-              </h3>
-              <p className={`text-sm mb-6 ${plan.highlight ? "text-blue-100" : "text-slate-500"}`}>
-                {plan.description}
-              </p>
-
-              <p className={`text-2xl font-bold mb-8 ${plan.highlight ? "text-white" : "text-slate-900"}`}>
-                Contact for pricing
-              </p>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {plan.features.map((f) => (
-                  <li key={f} className={`flex items-start gap-3 text-sm ${plan.highlight ? "text-blue-50" : "text-slate-600"}`}>
-                    <svg className={`w-4 h-4 mt-0.5 shrink-0 ${plan.highlight ? "text-white" : "text-blue-600"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href={plan.ctaHref}
-                className={`w-full text-center font-semibold py-3 rounded-xl text-sm transition-colors ${
-                  plan.highlight
-                    ? "bg-white text-blue-600 hover:bg-blue-50"
-                    : "bg-blue-600 text-white hover:bg-blue-700"
-                }`}
-              >
-                {plan.cta}
-              </a>
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {[
+            {
+              icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z",
+              title: "Per-order pricing",
+              description: "You pay per report or per search — not a monthly flat fee. Low volume months cost less automatically.",
+            },
+            {
+              icon: "M13 10V3L4 14h7v7l9-11h-7z",
+              title: "No minimums",
+              description: "No minimum order commitments. Start processing as soon as you're set up.",
+            },
+            {
+              icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
+              title: "No long-term contracts",
+              description: "Month-to-month. Cancel or pause any time. No lock-in.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-left">
+              <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-slate-500 leading-relaxed">{item.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="bg-blue-50 border border-blue-100 rounded-2xl p-8">
+          <p className="text-slate-700 text-base mb-6">
+            Ready to see what DocuPull costs for your order volume?
+          </p>
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Book a Demo
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <p className="text-sm text-slate-400 mt-4">We&apos;ll walk you through pricing on the call. No pressure.</p>
         </div>
       </div>
     </section>
