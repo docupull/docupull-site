@@ -23,7 +23,7 @@ export default function Navbar() {
             Log In
           </a>
           <a
-            href="#"
+            href="https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener noreferrer"
             className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Book a Demo

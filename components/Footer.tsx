@@ -11,11 +11,11 @@ const links = {
   ],
   Company: [
     { label: "Contact", href: "#contact" },
-    { label: "Book a Demo", href: "#" },
+    { label: "Book a Demo", href: "https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink" },
   ],
   Account: [
     { label: "Log In", href: "https://app.docupull.com" },
-    { label: "Book a Demo", href: "#" },
+    { label: "Book a Demo", href: "https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink" },
   ],
 };
 
