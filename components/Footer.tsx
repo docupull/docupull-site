@@ -23,9 +23,9 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400 py-16 px-6" id="contact">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <a href="/" className="text-xl font-bold text-white tracking-tight">
               Docu<span className="text-blue-400">Pull</span>
             </a>

@@ -1,4 +1,11 @@
+'use client';
+import { useState } from 'react';
+
+const DEMO_URL = "https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink";
+
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -18,18 +25,54 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="https://app.docupull.com"
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
+            className="hidden sm:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
           >
             Log In
           </a>
           <a
-            href="https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener noreferrer"
+            href={DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Book a Demo
           </a>
+          <button
+            className="md:hidden p-2 text-slate-600 hover:text-slate-900 transition-colors"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              {open ? (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
+
+      {open && (
+        <div className="md:hidden bg-white border-t border-slate-100 px-6 py-3 flex flex-col">
+          {[
+            { label: "Product", href: "#product" },
+            { label: "How it works", href: "#workflow" },
+            { label: "Pricing", href: "#pricing" },
+            { label: "Contact", href: "#contact" },
+            { label: "Log In", href: "https://app.docupull.com" },
+          ].map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              className="text-sm font-medium text-slate-600 hover:text-slate-900 py-3 border-b border-slate-50 last:border-0 transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      )}
     </header>
   );
 }

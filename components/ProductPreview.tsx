@@ -51,7 +51,7 @@ export default function ProductPreview() {
               </div>
               <div className="p-5">
                 {/* Stats row */}
-                <div className="grid grid-cols-4 gap-3 mb-5">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
                   {[
                     { label: "Total", value: "248", color: "text-white" },
                     { label: "Completed", value: "231", color: "text-emerald-400" },

@@ -9,7 +9,7 @@ export default function Hero() {
             Built for title production teams
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-[1.08] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.08] mb-6">
             Stop writing title reports.
             <br />
             <span className="text-blue-600">Start downloading them.</span>
@@ -57,9 +57,9 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex" style={{height: "480px"}}>
-              {/* Sidebar */}
-              <div className="w-56 bg-slate-900 border-r border-slate-800 flex flex-col py-4">
+            <div className="flex h-72 sm:h-96 md:h-[480px]">
+              {/* Sidebar — hidden on mobile */}
+              <div className="hidden md:flex w-56 bg-slate-900 border-r border-slate-800 flex-col py-4">
                 <div className="px-4 mb-4">
                   <span className="text-white font-bold text-base">Docu<span className="text-blue-400">Pull</span></span>
                 </div>
@@ -93,7 +93,7 @@ export default function Hero() {
               {/* Main panel */}
               <div className="flex-1 flex overflow-hidden">
                 {/* Order list */}
-                <div className="flex-1 p-5 overflow-hidden border-r border-slate-800">
+                <div className="flex-1 p-4 md:p-5 overflow-hidden lg:border-r lg:border-slate-800">
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <h3 className="text-white font-semibold">Orders</h3>
@@ -146,8 +146,8 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Detail panel — flagged order */}
-                <div className="w-72 p-5 bg-slate-950 overflow-hidden">
+                {/* Detail panel — hidden on mobile/tablet */}
+                <div className="hidden lg:block w-72 p-5 bg-slate-950 overflow-hidden">
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <span className="text-xs text-slate-500 font-mono">#2840</span>
