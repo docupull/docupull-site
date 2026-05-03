@@ -1,91 +1,115 @@
 export default function TwoPathWorkflow() {
   return (
-    <section className="py-24 px-6 bg-white" id="workflow">
+    <section className="py-24 px-6 bg-slate-50" id="workflow">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
             How it works
           </p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            No matter where you start, we handle the rest
+            Two ways in. One system out.
           </h2>
           <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
-            DocuPull works whether you already have documents or need us to perform
-            the title search from scratch.
+            Whether you already have the documents or need us to pull them — DocuPull
+            delivers the same result: a complete, verified title report with every issue flagged.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Path A */}
-          <div className="relative bg-blue-50 rounded-2xl p-8 border border-blue-100">
-            <div className="inline-flex items-center gap-2 bg-blue-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
-              Path A · Already have documents
+          <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">
+                A
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Already have documents</p>
+                <h3 className="text-lg font-bold text-slate-900">Upload &amp; generate</h3>
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-6">Upload &amp; generate</h3>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {[
                 { step: "1", text: "Upload your search package — PDFs or any file format" },
-                { step: "2", text: "DocuPull processes documents and extracts data" },
+                { step: "2", text: "DocuPull processes and extracts all document data" },
                 { step: "3", text: "Title report and legal description generated instantly" },
-                { step: "4", text: "Missing documents and chain issues flagged automatically" },
+                { step: "4", text: "Missing documents and chain breaks flagged automatically" },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-4">
-                  <span className="w-7 h-7 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shrink-0">
+                  <span className="w-6 h-6 rounded-full bg-blue-50 text-blue-600 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 border border-blue-100">
                     {item.step}
                   </span>
-                  <p className="text-sm text-slate-700 pt-1">{item.text}</p>
+                  <p className="text-sm text-slate-600">{item.text}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 bg-white rounded-xl p-4 border border-blue-100">
-              <div className="flex items-center gap-2 text-sm">
-                <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            <div className="bg-blue-50 rounded-xl p-4 border border-blue-100 flex items-center gap-3">
+              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
-                <span className="text-slate-600 font-medium">Report ready in seconds</span>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-slate-900">Report ready in ~14 seconds</p>
+                <p className="text-xs text-slate-500 mt-0.5">From upload to completed report</p>
               </div>
             </div>
           </div>
 
-          {/* Path B */}
-          <div className="relative bg-slate-900 rounded-2xl p-8 border border-slate-700">
-            <div className="inline-flex items-center gap-2 bg-slate-700 text-slate-200 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
-              Path B · Need a title search
+          {/* Path B — equal visual weight */}
+          <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-8 rounded-full bg-slate-800 text-white text-sm font-bold flex items-center justify-center">
+                B
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Need a title search</p>
+                <h3 className="text-lg font-bold text-slate-900">Submit &amp; we handle it</h3>
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-white mb-6">Submit &amp; we search</h3>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {[
-                { step: "1", text: "Submit order details — address, parties, requirements" },
-                { step: "2", text: "DocuPull performs the county title search" },
-                { step: "3", text: "We assemble the complete search package" },
-                { step: "4", text: "Report and legal description generated and delivered" },
+                { step: "1", text: "Submit order details — property address, parties, requirements" },
+                { step: "2", text: "DocuPull performs the county title search on your behalf" },
+                { step: "3", text: "We assemble the complete search package from county records" },
+                { step: "4", text: "Full report and legal description generated and delivered" },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-4">
-                  <span className="w-7 h-7 rounded-full bg-slate-600 text-white text-xs font-bold flex items-center justify-center shrink-0">
+                  <span className="w-6 h-6 rounded-full bg-slate-100 text-slate-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 border border-slate-200">
                     {item.step}
                   </span>
-                  <p className="text-sm text-slate-300 pt-1">{item.text}</p>
+                  <p className="text-sm text-slate-600">{item.text}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 bg-slate-800 rounded-xl p-4 border border-slate-700">
-              <div className="flex items-center gap-2 text-sm">
-                <svg className="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-center gap-3">
+              <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center shrink-0">
+                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
-                <span className="text-slate-300 font-medium">End-to-end coverage, no extra vendors</span>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-slate-900">End-to-end, no extra vendors</p>
+                <p className="text-xs text-slate-500 mt-0.5">Search, package, and report — all in one</p>
               </div>
             </div>
           </div>
         </div>
 
-        <p className="text-center text-slate-500 text-sm mt-10">
-          Both paths deliver the same result: a complete, verified title report with issues flagged.
-        </p>
+        {/* Convergence note */}
+        <div className="mt-8 text-center">
+          <div className="inline-flex items-center gap-3 bg-white border border-slate-200 rounded-full px-6 py-3 shadow-sm">
+            <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="text-sm text-slate-600">
+              Both paths deliver the same output: a complete title report with issues flagged
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );

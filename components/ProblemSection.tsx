@@ -1,21 +1,3 @@
-const before = [
-  "Orders arrive via email threads",
-  "Files scattered across shared drives",
-  "Manual title report creation",
-  "Full manual document review",
-  "Delays from missing documents",
-  "No visibility into order status",
-];
-
-const after = [
-  "Centralized order dashboard",
-  "Files uploaded directly to orders",
-  "Reports generated automatically",
-  "Only flagged issues need review",
-  "Missing documents detected instantly",
-  "Real-time status for every order",
-];
-
 export default function ProblemSection() {
   return (
     <section className="py-24 px-6 bg-white" id="product">
@@ -23,53 +5,93 @@ export default function ProblemSection() {
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">The problem</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Title production is stuck in the past
+            Title production hasn&apos;t changed in decades
           </h2>
           <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
-            Most teams are still managing orders through email chains, shared drives, and
-            fully manual report writing. It&apos;s slow, error-prone, and impossible to scale.
+            Most teams are one missed email away from a delayed closing. Every order
+            is a manual process — and the volume keeps growing.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Before */}
-          <div className="bg-red-50 rounded-2xl p-8 border border-red-100">
-            <div className="flex items-center gap-2 mb-6">
-              <span className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center">
-                <svg className="w-3.5 h-3.5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        {/* Pain points visual grid */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-5xl mx-auto">
+          {[
+            {
+              icon: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+              title: "Orders live in email",
+              description: "Every order is a thread. Every update is a reply-all. Tracking down status means searching your inbox.",
+            },
+            {
+              icon: "M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z",
+              title: "Files are everywhere",
+              description: "Search packages scattered across shared drives, email attachments, and local folders. No version control, no audit trail.",
+            },
+            {
+              icon: "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z",
+              title: "Reports are written by hand",
+              description: "Every title report is built from scratch, manually. Inconsistent formatting, hours of work, and no way to scale.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
                 </svg>
-              </span>
-              <h3 className="font-semibold text-slate-800">Without DocuPull</h3>
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">{item.description}</p>
             </div>
-            <ul className="space-y-3">
-              {before.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0"></span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          ))}
+        </div>
 
-          {/* After */}
-          <div className="bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
-            <div className="flex items-center gap-2 mb-6">
-              <span className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center">
-                <svg className="w-3.5 h-3.5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
-              </span>
-              <h3 className="font-semibold text-slate-800">With DocuPull</h3>
+        {/* Before → After comparison */}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-5">Without DocuPull</p>
+              <ul className="space-y-3">
+                {[
+                  "Receive order via email",
+                  "Manually organize documents in a shared drive",
+                  "Write the title report from scratch",
+                  "Review every document yourself",
+                  "Manually check for chain of title issues",
+                  "Repeat for every single order",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
+                    <span className="w-4 h-4 rounded-full bg-slate-200 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg className="w-2.5 h-2.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="space-y-3">
-              {after.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0"></span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+
+            <div className="bg-emerald-50 rounded-2xl p-8 border border-emerald-100">
+              <p className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-5">With DocuPull</p>
+              <ul className="space-y-3">
+                {[
+                  "Order created in DocuPull dashboard",
+                  "Upload files or submit for search — done",
+                  "Report and legal description auto-generated",
+                  "Only flagged orders need your attention",
+                  "Missing docs and chain breaks detected instantly",
+                  "Scales to any order volume without extra work",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-slate-700">
+                    <span className="w-4 h-4 rounded-full bg-emerald-200 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg className="w-2.5 h-2.5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
