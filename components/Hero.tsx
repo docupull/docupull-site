@@ -10,8 +10,9 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.08] mb-6">
-            From county search to title report —
-            <br />
+            From county search
+            <br className="hidden md:block" />
+            {" "}to title report —{" "}
             <span className="text-blue-600">instantly.</span>
           </h1>
 

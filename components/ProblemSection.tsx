@@ -7,11 +7,7 @@ export default function ProblemSection() {
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
             Title production is still manual
           </h2>
-          <div className="text-lg text-slate-500 mt-6 max-w-xl mx-auto space-y-1 leading-relaxed">
-            <p>Email. Shared drives. Spreadsheets.</p>
-            <p>Manual reports. Full file reviews.</p>
-          </div>
-          <p className="text-base text-slate-400 mt-4 max-w-xl mx-auto">
+          <p className="text-base text-slate-400 mt-6 max-w-xl mx-auto">
             Slow. Fragmented. Hard to scale.
           </p>
         </div>
@@ -47,6 +43,7 @@ export default function ProblemSection() {
         </div>
 
         <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold text-slate-900 tracking-tight text-center mb-8">See the difference</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
               <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-5">Without DocuPull</p>

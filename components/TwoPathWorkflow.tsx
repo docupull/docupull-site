@@ -9,9 +9,6 @@ export default function TwoPathWorkflow() {
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
             Start anywhere
           </h2>
-          <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
-            Have documents or need a search — same result either way.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">

@@ -21,24 +21,8 @@ export default function ProductPreview() {
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
                 Every order, one place. Real-time status, always.
               </h3>
-              <p className="text-slate-500 leading-relaxed mb-6">
-                No more inbox digging. Every order has a live status — Processing, Flagged,
-                or Completed. Your team sees exactly where every order stands without asking anyone.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Filter by status, type, or date range",
-                  "Upload workflow and full search orders side by side",
-                  "Flagged orders surface automatically at the top",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
-                    <svg className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-slate-500 leading-relaxed">Every order tracked in one place, with live status.</p>
+              <p className="text-slate-500 leading-relaxed mt-2">Flagged orders surface automatically — no inbox digging.</p>
             </div>
 
             <div className="bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 shadow-xl">
@@ -100,26 +84,8 @@ export default function ProductPreview() {
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
                 Complete title reports, written automatically
               </h3>
-              <p className="text-slate-500 leading-relaxed mb-6">
-                DocuPull writes the full title report and legal description from the documents
-                you provide. No templates to fill in. No copy-pasting. Just a complete,
-                formatted report ready to download.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Title report structured consistently on every order",
-                  "Legal description extracted and formatted",
-                  "Chain of title documented with all recorded instruments",
-                  "PDF download ready in seconds",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
-                    <svg className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-slate-500 leading-relaxed">Full title report and legal description written by AI — automatically.</p>
+              <p className="text-slate-500 leading-relaxed mt-2">No templates. No copy-pasting. PDF ready in seconds.</p>
             </div>
 
             <div className="lg:order-1 bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
@@ -201,26 +167,8 @@ export default function ProductPreview() {
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
                 Problems surfaced before they reach your client
               </h3>
-              <p className="text-slate-500 leading-relaxed mb-6">
-                DocuPull checks every order for missing deeds, missing mortgages, and breaks
-                in the chain of title. Issues are flagged with specific details — so when
-                you open a flagged order, you know exactly what to look for.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Missing deed between recorded owners detected instantly",
-                  "Open mortgages without recorded satisfaction flagged",
-                  "Gaps in chain of title identified by year and grantor",
-                  "Every issue described specifically, not generically",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
-                    <svg className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-slate-500 leading-relaxed">Every order checked for missing deeds, chain breaks, and open mortgages.</p>
+              <p className="text-slate-500 leading-relaxed mt-2">Issues flagged with specific details — so you know exactly what to fix.</p>
             </div>
 
             <div className="bg-slate-950 rounded-2xl border border-slate-800 shadow-xl overflow-hidden">
