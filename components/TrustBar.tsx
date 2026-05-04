@@ -1,8 +1,8 @@
 const metrics = [
   { value: "~14s", label: "Average report generation time" },
+  { value: "50", label: "States covered — Current Owner, 2O & Full Search" },
   { value: "100%", label: "Of orders auto-checked for title issues" },
-  { value: "0", label: "Manual reports needed after processing" },
-  { value: "2", label: "Workflow paths — upload or full search" },
+  { value: "4", label: "Title production teams trust DocuPull" },
 ];
 
 export default function TrustBar() {

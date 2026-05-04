@@ -96,6 +96,17 @@ export default function TwoPathWorkflow() {
                 <p className="text-xs text-slate-500 mt-0.5">Search, package, and report — all in one</p>
               </div>
             </div>
+
+            <div className="flex items-center gap-2 flex-wrap pt-1">
+              {["Current Owner", "Two Owner (2O)", "Full Search"].map((type) => (
+                <span key={type} className="text-xs font-medium bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full border border-slate-200">
+                  {type}
+                </span>
+              ))}
+              <span className="text-xs font-medium bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full border border-emerald-100">
+                All 50 states
+              </span>
+            </div>
           </div>
         </div>
 
