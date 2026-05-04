@@ -15,10 +15,10 @@ export default function WhyItMatters() {
             </p>
             <ul className="space-y-4">
               {[
-                { heading: "Cut turnaround times dramatically", detail: "What used to take hours per order now completes in seconds — automatically." },
-                { heading: "Eliminate manual title report creation", detail: "Reports are produced by AI the moment processing completes. Zero manual work." },
-                { heading: "Reduce review workload", detail: "Your team opens flagged orders only. Clean orders ship without anyone touching them." },
-                { heading: "Scale without adding headcount", detail: "Handle 2–3× the order volume without proportional staff increases." },
+                { heading: "Cut turnaround times dramatically", detail: "Hours of work per order now completes in seconds." },
+                { heading: "Eliminate manual report creation", detail: "Reports generated the moment processing completes. Zero manual work." },
+                { heading: "Reduce review workload", detail: "Your team only opens flagged orders. Clean orders ship automatically." },
+                { heading: "Scale without adding headcount", detail: "Handle 2–3× the volume without proportional staffing." },
               ].map((item) => (
                 <li key={item.heading} className="flex items-start gap-3">
                   <svg className="w-4 h-4 text-blue-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

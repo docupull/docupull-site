@@ -1,6 +1,6 @@
 export default function ProductPreview() {
   return (
-    <section className="py-24 px-6 bg-slate-50" id="product-preview">
+    <section className="pt-12 pb-24 px-6 bg-slate-50" id="product-preview">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Product</p>
