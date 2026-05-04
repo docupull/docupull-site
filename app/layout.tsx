@@ -41,16 +41,16 @@ export default function RootLayout({
           gtag('config', 'G-PFEMYWYBL1');
         `}</Script>
 
-        {/* MS Teams live chat widget */}
-        <Script id="ms-teams-chat" strategy="afterInteractive">{`
-          var s = document.createElement('script');
-          s.src = 'https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js';
-          s.id = 'chatbot';
-          s.setAttribute('environmentId', 'bb1c4a61-b840-ee53-8798-05d8087c5f0a');
-          s.setAttribute('region', 'unitedstates');
-          s.crossOrigin = 'anonymous';
-          document.body.appendChild(s);
-        `}</Script>
+        {/* MS Teams live chat widget — attributes passed directly on the script element */}
+        <Script
+          src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js"
+          id="chatbot"
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+          // @ts-expect-error non-standard attributes required by MS Teams widget
+          environmentId="bb1c4a61-b840-ee53-8798-05d8087c5f0a"
+          region="unitedstates"
+        />
       </body>
     </html>
   );
