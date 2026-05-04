@@ -4,7 +4,7 @@ export default function WhyItMatters() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Business impact</p>
+            <p className="inline-block bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-400/30 uppercase tracking-widest mb-5">Business impact</p>
             <h2 className="text-4xl font-bold text-white tracking-tight mb-6">
               More orders. Same team.
             </h2>

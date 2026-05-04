@@ -26,7 +26,7 @@ export default function SolutionOverview() {
     <section className="py-24 px-6 bg-slate-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3">The solution</p>
+          <p className="inline-block bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-400/30 uppercase tracking-widest mb-5">The solution</p>
           <h2 className="text-4xl font-bold text-white tracking-tight">
             The operating system for title production
           </h2>

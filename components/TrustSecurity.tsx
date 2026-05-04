@@ -42,7 +42,7 @@ export default function TrustSecurity() {
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Security & reliability</p>
+          <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Security & reliability</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
             Built to handle real production workflows
           </h2>
