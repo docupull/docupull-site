@@ -4,11 +4,10 @@ export default function Pricing() {
       <div className="max-w-4xl mx-auto text-center">
         <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Pricing</p>
         <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-4">
-          Pricing that scales with your volume
+          Simple pricing
         </h2>
         <p className="text-lg text-slate-500 max-w-xl mx-auto mb-12">
-          Simple per-order pricing — no subscriptions, no seat fees, no contracts.
-          Pay for what you process. Book a demo and we'll walk you through the numbers.
+          Based on order volume. No subscriptions, no seat fees, no contracts.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -43,7 +42,7 @@ export default function Pricing() {
 
         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-8">
           <p className="text-slate-700 text-base mb-6">
-            Ready to see what DocuPull costs for your order volume?
+            Book a Demo to learn more.
           </p>
           <a
             href="https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener noreferrer"

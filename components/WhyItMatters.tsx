@@ -6,19 +6,18 @@ export default function WhyItMatters() {
           <div>
             <p className="inline-block bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-400/30 uppercase tracking-widest mb-5">Business impact</p>
             <h2 className="text-4xl font-bold text-white tracking-tight mb-6">
-              Remove bottlenecks.<br />Move faster. Scale without friction.
+              Less work.<br />Faster turnaround.
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-8">
-              The biggest constraint in title production isn&apos;t demand — it&apos;s capacity.
-              DocuPull removes the work that scales linearly with order volume, so your
-              team handles more without burning out or hiring ahead.
+              DocuPull removes the work that scales linearly with order volume.
+              Your team handles more — without burning out or hiring ahead.
             </p>
             <ul className="space-y-4">
               {[
-                { heading: "Cut turnaround times dramatically", detail: "Hours of work per order now completes in seconds." },
-                { heading: "Eliminate manual report creation", detail: "Reports generated the moment processing completes. Zero manual work." },
-                { heading: "Reduce review workload", detail: "Your team only opens flagged orders. Clean orders ship automatically." },
-                { heading: "Scale without adding headcount", detail: "Handle 2–3× the volume without proportional staffing." },
+                { heading: "No manual report creation", detail: "Generated the moment processing completes." },
+                { heading: "No full-file reviews", detail: "Your team opens flagged orders only." },
+                { heading: "No workflow bottlenecks", detail: "Clean orders ship automatically." },
+                { heading: "Scale without headcount", detail: "Handle 2–3× the volume without proportional staffing." },
               ].map((item) => (
                 <li key={item.heading} className="flex items-start gap-3">
                   <svg className="w-4 h-4 text-blue-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

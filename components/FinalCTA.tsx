@@ -6,13 +6,10 @@ export default function FinalCTA() {
     <section className="py-24 px-6 bg-blue-600">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">
-          Modernize your title production workflow
+          Upgrade your title workflow
         </h2>
-        <p className="text-xl text-blue-100 mb-4">
-          From county search to final report — all in one system.
-        </p>
-        <p className="text-blue-200 text-base mb-10">
-          See a full title report generated in under 2 minutes.
+        <p className="text-xl text-blue-100 mb-10">
+          From search to report — in one system.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

@@ -5,16 +5,14 @@ export default function ProblemSection() {
         <div className="text-center mb-16">
           <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">The problem</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Title production is still manual,<br className="hidden md:block" /> fragmented, and slow
+            Title production is still manual
           </h2>
-          <div className="text-lg text-slate-500 mt-6 max-w-2xl mx-auto space-y-1 leading-relaxed">
-            <p>Orders come in through email.</p>
-            <p>Documents are scattered across shared drives.</p>
-            <p>Title reports are built manually, from scratch.</p>
-            <p>Every file gets reviewed line by line.</p>
+          <div className="text-lg text-slate-500 mt-6 max-w-xl mx-auto space-y-1 leading-relaxed">
+            <p>Email. Shared drives. Spreadsheets.</p>
+            <p>Manual reports. Full file reviews.</p>
           </div>
-          <p className="text-base text-slate-400 mt-5 max-w-xl mx-auto">
-            Turnaround times suffer. Bottlenecks stack up. Scaling becomes harder every month.
+          <p className="text-base text-slate-400 mt-4 max-w-xl mx-auto">
+            Slow. Fragmented. Hard to scale.
           </p>
         </div>
 

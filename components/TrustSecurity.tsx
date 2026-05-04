@@ -6,7 +6,7 @@ const items = [
       </svg>
     ),
     title: "Secure document handling",
-    description: "All documents are encrypted in transit and at rest. Your data never leaves our secure infrastructure.",
+    description: "Documents encrypted in transit and at rest.",
   },
   {
     icon: (
@@ -15,7 +15,7 @@ const items = [
       </svg>
     ),
     title: "Built for title workflows",
-    description: "Designed specifically for real estate title production — not a generic document tool adapted for the industry.",
+    description: "Designed for title production — not a generic document tool.",
   },
   {
     icon: (
@@ -24,7 +24,7 @@ const items = [
       </svg>
     ),
     title: "Consistent, reliable output",
-    description: "Every report follows the same structure. Consistent formatting, consistent terminology, every time.",
+    description: "Every report: same structure, same formatting, every time.",
   },
   {
     icon: (
@@ -33,7 +33,7 @@ const items = [
       </svg>
     ),
     title: "Reliable processing",
-    description: "Built for production use. Handles high order volumes without degradation in speed or accuracy.",
+    description: "Handles high volumes without degradation in speed or accuracy.",
   },
 ];
 
@@ -44,10 +44,10 @@ export default function TrustSecurity() {
         <div className="text-center mb-16">
           <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Security & reliability</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Built to handle real production workflows
+            Built for production
           </h2>
-          <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
-            DocuPull is a production-grade platform designed for the demands of title operations.
+          <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
+            Secure document handling. Reliable output. Designed for real title workflows.
           </p>
         </div>
 

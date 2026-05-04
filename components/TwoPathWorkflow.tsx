@@ -7,11 +7,10 @@ export default function TwoPathWorkflow() {
             How it works
           </p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Two ways in. One system out.
+            Start anywhere
           </h2>
-          <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
-            Whether you already have the documents or need us to pull them — DocuPull
-            delivers the same result: a complete, verified title report with every issue flagged.
+          <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
+            Have documents or need a search — same result either way.
           </p>
         </div>
 

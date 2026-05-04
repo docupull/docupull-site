@@ -5,11 +5,10 @@ export default function ProductPreview() {
         <div className="text-center mb-16">
           <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Product</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            See exactly what your team gets
+            Built for real operations
           </h2>
-          <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
-            From order submission to completed report — every step happens inside DocuPull.
-            Your team only opens what needs review.
+          <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
+            Track every order. Focus only on flagged files. Download reports when ready.
           </p>
         </div>
 

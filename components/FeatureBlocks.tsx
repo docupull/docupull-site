@@ -42,12 +42,12 @@ export default function FeatureBlocks() {
     <section className="py-24 px-6 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Core capabilities</p>
+          <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">What we do</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Everything you need to run title production
+            We handle the work
           </h2>
           <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
-            Four capabilities. One platform. Every order handled end to end.
+            Four capabilities. One platform.
           </p>
         </div>
 
