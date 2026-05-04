@@ -6,19 +6,19 @@ export default function Hero() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 border border-blue-100">
             <span className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"></span>
-            Built for title production teams
+            AI-powered title production · All 50 states
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.08] mb-6">
-            Stop writing title reports.
+            From county search to title report —
             <br />
-            <span className="text-blue-600">Start downloading them.</span>
+            <span className="text-blue-600">in seconds.</span>
           </h1>
 
           <p className="text-xl text-slate-500 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Upload your search package or submit an order for a full title search.
-            DocuPull generates the report, writes the legal description, and flags
-            every issue — automatically.
+            DocuPull uses AI to search county records, compile document packages,
+            and generate title reports and legal descriptions — automatically flagging
+            issues so your team only reviews what matters.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -38,7 +38,7 @@ export default function Hero() {
               Log In
             </a>
           </div>
-          <p className="text-sm text-slate-400 mt-4">Secure platform · No setup fee · Works in minutes</p>
+          <p className="text-sm text-slate-400 mt-4">Built for title production teams · Secure · Scalable</p>
         </div>
 
         {/* Product mockup — Order dashboard + report detail */}

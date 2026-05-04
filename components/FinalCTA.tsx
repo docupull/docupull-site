@@ -1,3 +1,6 @@
+const DEMO_URL =
+  "https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink";
+
 export default function FinalCTA() {
   return (
     <section className="py-24 px-6 bg-blue-600">
@@ -5,12 +8,17 @@ export default function FinalCTA() {
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">
           Modernize your title production workflow
         </h2>
-        <p className="text-xl text-blue-100 mb-10">
-          From search to report — all in one system.
+        <p className="text-xl text-blue-100 mb-4">
+          From county search to final report — all in one system.
+        </p>
+        <p className="text-blue-200 text-base mb-10">
+          See a full title report generated in under 2 minutes.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://outlook.office.com/bookwithme/user/7ae332d37d13468fa312e0ab4b4d5148@docupull.com/meetingtype/LVGX36V0LEWcFn2QVqzQNA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener noreferrer"
+            href={DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-blue-600 font-semibold px-8 py-3.5 rounded-lg hover:bg-blue-50 transition-colors text-base"
           >
             Book a Demo
@@ -25,7 +33,7 @@ export default function FinalCTA() {
             Log In
           </a>
         </div>
-        <p className="text-blue-200 text-sm mt-6">No credit card required · Set up in minutes</p>
+        <p className="text-blue-200 text-sm mt-6">Built for title production teams · Secure · Scalable</p>
       </div>
     </section>
   );

@@ -1,39 +1,39 @@
 const features = [
   {
-    category: "Speed",
-    headline: "~14 seconds from upload to report",
+    category: "Search",
+    headline: "County records searched automatically",
     description:
-      "Title reports and legal descriptions are generated as soon as your documents are processed. No queue, no wait, no manual work.",
-    tag: "bg-yellow-50 border-yellow-100",
-    iconBg: "bg-yellow-100 text-yellow-600",
-    icon: "M13 10V3L4 14h7v7l9-11h-7z",
-  },
-  {
-    category: "Accuracy",
-    headline: "Every issue caught. Every time.",
-    description:
-      "Missing deeds, missing mortgages, and chain of title breaks are detected automatically — not just when someone remembers to check.",
-    tag: "bg-emerald-50 border-emerald-100",
-    iconBg: "bg-emerald-100 text-emerald-600",
-    icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-  },
-  {
-    category: "Focus",
-    headline: "Your reviewers work only flagged orders",
-    description:
-      "Completed orders need zero human review. Your team opens flagged orders only — the ones where your expertise actually changes the outcome.",
+      "DocuPull's AI searches county record systems across all 50 states — identifying and retrieving the relevant property documents for each order without manual lookup.",
     tag: "bg-blue-50 border-blue-100",
     iconBg: "bg-blue-100 text-blue-600",
-    icon: "M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z",
+    icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
   },
   {
-    category: "Coverage",
-    headline: "From search to final report, end-to-end",
+    category: "Compilation",
+    headline: "Structured packages, built for you",
     description:
-      "Already have documents? Upload them. Need us to run the search? Submit the order. Either way, you get a complete report without additional vendors.",
+      "Raw records are assembled into complete, structured search packages automatically. No manual sorting, no missing documents, no formatting work.",
     tag: "bg-purple-50 border-purple-100",
     iconBg: "bg-purple-100 text-purple-600",
-    icon: "M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z",
+    icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+  },
+  {
+    category: "Report Generation",
+    headline: "Title reports written in seconds",
+    description:
+      "Title reports and legal descriptions are generated the moment processing completes — consistent formatting, every order, automatically.",
+    tag: "bg-emerald-50 border-emerald-100",
+    iconBg: "bg-emerald-100 text-emerald-600",
+    icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z",
+  },
+  {
+    category: "Issue Detection",
+    headline: "Problems caught before they reach clients",
+    description:
+      "Missing deeds, unsatisfied mortgages, and breaks in chain of title are flagged on every order — automatically, not just when someone remembers to check.",
+    tag: "bg-amber-50 border-amber-100",
+    iconBg: "bg-amber-100 text-amber-600",
+    icon: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z",
   },
 ];
 
@@ -42,13 +42,12 @@ export default function FeatureBlocks() {
     <section className="py-24 px-6 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Capabilities</p>
+          <p className="inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-100 uppercase tracking-widest mb-5">Core capabilities</p>
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
-            Built around outcomes, not features
+            Everything you need to run title production
           </h2>
           <p className="text-lg text-slate-500 mt-4 max-w-xl mx-auto">
-            Every capability in DocuPull exists to move an order from received to completed —
-            faster, more accurately, with less work from your team.
+            Four capabilities. One platform. Every order handled end to end.
           </p>
         </div>
 

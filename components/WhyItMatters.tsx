@@ -6,19 +6,19 @@ export default function WhyItMatters() {
           <div>
             <p className="inline-block bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-400/30 uppercase tracking-widest mb-5">Business impact</p>
             <h2 className="text-4xl font-bold text-white tracking-tight mb-6">
-              More orders. Same team.
+              Remove bottlenecks.<br />Move faster. Scale without friction.
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-8">
               The biggest constraint in title production isn&apos;t demand — it&apos;s capacity.
               DocuPull removes the work that scales linearly with order volume, so your
-              team can handle more without burning out or hiring ahead.
+              team handles more without burning out or hiring ahead.
             </p>
             <ul className="space-y-4">
               {[
-                { heading: "Eliminate manual report writing", detail: "Every report is produced automatically. What used to take hours per order takes seconds." },
-                { heading: "Stop reviewing orders that don't need it", detail: "Your reviewers only open flagged orders. The rest ship clean, automatically." },
-                { heading: "Scale without proportional headcount", detail: "Handle 2× the order volume without 2× the staff. The platform does the linear work." },
-                { heading: "Catch issues before they reach the client", detail: "Automated detection means you find the gap before your client does." },
+                { heading: "Cut turnaround times dramatically", detail: "What used to take hours per order now completes in seconds — automatically." },
+                { heading: "Eliminate manual title report creation", detail: "Reports are produced by AI the moment processing completes. Zero manual work." },
+                { heading: "Reduce review workload", detail: "Your team opens flagged orders only. Clean orders ship without anyone touching them." },
+                { heading: "Scale without adding headcount", detail: "Handle 2–3× the order volume without proportional staff increases." },
               ].map((item) => (
                 <li key={item.heading} className="flex items-start gap-3">
                   <svg className="w-4 h-4 text-blue-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -35,7 +35,7 @@ export default function WhyItMatters() {
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              { metric: "~14s", label: "Average report turnaround", detail: "From upload to completed report" },
+              { metric: "~14s", label: "Avg. report turnaround", detail: "From upload to completed report" },
               { metric: "100%", label: "Orders auto-checked for issues", detail: "Every single order, every time" },
               { metric: "0", label: "Manual reports needed", detail: "Completely eliminated from workflow" },
               { metric: "2–3×", label: "Order capacity per team", detail: "Without adding headcount" },
