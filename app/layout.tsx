@@ -31,14 +31,14 @@ export default function RootLayout({
 
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-50148703"
+          src="https://www.googletagmanager.com/gtag/js?id=G-PFEMYWYBL1"
           strategy="afterInteractive"
         />
         <Script id="ga-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-50148703');
+          gtag('config', 'G-PFEMYWYBL1');
         `}</Script>
 
         {/* MS Teams live chat widget */}
