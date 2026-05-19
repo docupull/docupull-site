@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "DocuPull — The Operating System for Title Production",
   description:
     "Upload search packages or submit order details. DocuPull generates title reports, legal descriptions, and flags issues automatically — in seconds.",
+  metadataBase: new URL("https://docupull.com"),
+  alternates: {
+    canonical: "https://docupull.com",
+  },
   openGraph: {
     title: "DocuPull — The Operating System for Title Production",
     description:
